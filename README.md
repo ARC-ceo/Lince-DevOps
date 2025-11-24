@@ -1,4 +1,34 @@
-# DevOps -- Infraestrutura, Deploy e Gerenciamento do Projeto Lince
+![Logo](logo.png)
+# Lince - Arquitetura em DevOps
+
+O **Lince** é um sistema completo para **monitoramento, análise e gestão
+de EPIs** (Equipamentos de Proteção Individual), integrando dados em
+tempo real de sensores instalados em estações e ambientes operacionais.\
+A plataforma permite acompanhar uso, conformidade, alertas de segurança
+e comportamento operacional, garantindo maior proteção para
+colaboradores e maior controle para equipes de supervisão e segurança.
+
+Nosso objetivo é oferecer uma solução moderna e confiável para
+**monitoramento inteligente de EPIs**, reduzindo riscos, prevenindo
+acidentes e centralizando informações essenciais para os times de
+segurança corporativa.
+
+## Problemas que a aplicação resolve
+-   Falta de visibilidade sobre **uso correto** de EPIs.
+-   Dificuldade em monitorar automaticamente **violação de áreas
+    restritas**.
+-   Baixa eficiência em auditorias e checklists de segurança.
+-   Falta de relatórios centralizados para tomada de decisão.
+-   Integração limitada entre sensores físicos e aplicações
+    administrativas.
+
+## Sobre o time
+
+- **Arthur Algate RM:560109**: Responsável pelo banco de dados e Compliance QA.  
+- **Carlos Clementino RM:561187**: Responsável pelo desenvolvimento da API em Java Spring Boot e .NET, infraestrutura e práticas de DevOps, e pela integração com dispositivos IoT.  
+- **Eder Silva RM:559647**: Responsável pela criação do APP mobile.
+
+## Informações Importantes
 
 Este repositório reúne toda a estrutura de **DevOps**, documentação de
 deploy e organização dos dois projetos principais que compõem o sistema
@@ -15,8 +45,8 @@ inicialização automática e ambientes independentes.
 ## 📁 Estrutura do Repositório
 
     /DevOps
-     ├── frontend/   → Site React + TypeScript
-     ├── backend/    → API Spring Boot em Java
+     ├── Site/   → Site React + TypeScript
+     ├── Backend/    → API Spring Boot em Java
      └── README.md
 
 ------------------------------------------------------------------------
@@ -25,7 +55,7 @@ inicialização automática e ambientes independentes.
 
 ### 🖥️ Sistemas Operacionais das VMs
 
--   **Backend:** AlmaLinux 9 / Ubuntu Server 22.04 LTS\
+-   **Backend:** AlmaLinux 9 
 -   **Frontend:** Windows Server 2019 Datacenter
 
 ------------------------------------------------------------------------
@@ -36,9 +66,7 @@ inicialização automática e ambientes independentes.
 -   Apache Maven **3.9.x**
 -   Spring Boot **3.3.x**
 -   Oracle Database **21c** (produção)
--   H2 Database **2.x** (local)
 -   Git **2.43+**
--   FirewallD / UFW
 
 ### 🌐 Ferramentas do Frontend
 
@@ -90,7 +118,7 @@ inicialização automática e ambientes independentes.
 
 ### 📂 Acessar o diretório
 
-    cd C:rontend
+    cd Site
 
 ### 📦 Instalar dependências
 
@@ -114,17 +142,15 @@ Isso gera a pasta **dist/**.
 
 **Application Path:**
 
-    C:\Program Files
-    odejs
-    px.cmd
+    C:\Program Files\nodejs\npx.cmd
 
 **Arguments:**
 
-    serve C:rontend\dist -p 3000 -s
+    serve C:\Site\dist -p 3000 -s
 
 **Startup directory:**
 
-    C:rontend
+    C:\Site
 
 ### 3. Iniciar o serviço
 
@@ -136,7 +162,7 @@ Isso gera a pasta **dist/**.
 
 ### 🌐 Site disponível em:
 
-    http://<IP-DA-SUA-VM>:3000
+    http://<IP-DA-VM>:3000
 
 ------------------------------------------------------------------------
 
@@ -160,11 +186,7 @@ Isso gera a pasta **dist/**.
 
 Isso gera um arquivo como:
 
-    target/lince-api-1.0.0.jar
-
-### ▶️ Executar o Backend (profile local)
-
-    java -jar target/lince-api-1.0.0.jar --spring.profiles.active=local
+    target/lince-1.0.0.jar
 
 ### ▶️ Executar o Backend (profile prod com Oracle)
 
@@ -172,7 +194,7 @@ Isso gera um arquivo como:
 
 ### 🌐 API disponível
 
-    http://<IP-DO-SERVIDOR>:8080
+    http://<IP-DA-VM>:8080
 
 ------------------------------------------------------------------------
 
@@ -217,4 +239,6 @@ Isso gera um arquivo como:
 
 ------------------------------------------------------------------------
 
-Pronto! README formatado profissionalmente.
+---
+
+**Lince** — Visão total. Risco mínimo. 🦁
