@@ -198,7 +198,7 @@ Isso gera um arquivo como:
 
 ------------------------------------------------------------------------
 
-# 🔐 Regras de Firewall Necessárias
+# 🔐 Regras de NSG Necessárias
 
 ## Backend (Linux)
 
@@ -210,10 +210,11 @@ Isso gera um arquivo como:
 
 ## Frontend (Windows)
 
-  Porta      Função
-  ---------- ------------
-  **3000**   Site React
-  **3389**   RDP
+| Porta | Função       | 
+|--------|----------------|
+| **3000**    | Site React       | 
+| **3389**    | RDP       | 
+
 
 ------------------------------------------------------------------------
 
