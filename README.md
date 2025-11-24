@@ -202,10 +202,11 @@ Isso gera um arquivo como:
 
 ## Backend (Linux)
 
-  Porta      Função
-  ---------- -----------------
-  **8080**   API Spring Boot
-  **22**     SSH
+| Porta | Função       | 
+|--------|----------------|
+| **8080**    | API Spring Boot       | 
+| **22**    | SSH       | 
+
 
 ## Frontend (Windows)
 
@@ -238,7 +239,5 @@ Isso gera um arquivo como:
 7.  Liberar porta 3000
 
 ------------------------------------------------------------------------
-
----
 
 **Lince** — Visão total. Risco mínimo. 🦁
